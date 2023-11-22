@@ -34,68 +34,69 @@ body {
 #Homepage a:hover{
     color: #46433e;
 }
-.TitleFirst{
-    color: rgba(164, 18, 18, 0.525);
-}
-.TitleFirst img{
-    width: 25px;
-    margin: 10px;
-}
-.FirstContainer{
-    background-color: #eeeff1;
-    width: 80%;
-    justify-content: center;
-    margin: 10px 150px;
-    padding: 20px;
-}
-.FirstContainer img{
-    width: 100%;
-}
-.FirstContainer p{
-    margin: 10px 0;
-    font-size: 15px;
-    color: #242321;
-    font-family: 'Playfair Display', serif;
-}
-.SecondContainer {
-    background-color: #f1efee;
-    width: 85%;
-    justify-content: center;
-    margin: 10px 100px;
-    padding: 20px;
+.ContainerImages {
+    width: 160vh; 
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url(./assets/images/str.jpg);
+    margin: 0 125px;
 }
 
-.SecondContainer img {
-    width: 25%;
+.TitleFirst{
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+}
+.TitleFirst img{
+    color: rgba(164, 18, 18, 0.525);
+    width: 20px;
+    margin: 0 10px;
+}
+
+.SecondContainer {
+    background-color: #f1efee;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.SecondImage img {
+    width: 30%;
 }
 
 .SecondContainer p {
-    margin: 10px 0;
-    font-size: 15px;
-    color: #242321;
-    font-family: 'Playfair Display', serif;
-}
-.ThirdContainer {
-    background-color: #f1efee;
-    width: 85%;
+    margin: 0;
+    flex-direction: column;
+    width: 90%;
     justify-content: center;
-    margin: 10px 100px;
-    padding: 20px;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.ThirdContainer {
+   background-color: rgba(255, 230, 217, 0.429);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0;
 }
 .ThirdContainer h1{
     color: rgba(164, 18, 18, 0.525);
 }
 .ThirdContainer h1 img{
-    width: 25px;
+    width: 20px;
     margin: 10px;
 }
 .ThirdContainer img {
-    width: 25%;
+    width: 30%;
+    margin: 10px;
 }
 
 .ThirdContainer p {
-    margin: 10px 0;
-    font-size: 15px;
-    color: #242321;
-    font-family: 'Playfair Display', serif;
+    margin: 0;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
 }
