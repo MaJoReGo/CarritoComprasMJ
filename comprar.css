@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    width: 100%;
+    background-color: #d9d3d1;
+    color: #242321;
+    margin: auto;
+  }
+#Homepage{
+    display: flex;
+    width: 100%;
+    background-color: #c3bdb9;
+}
+#Homepage h1{
+    display: flex;
+    margin: 10px 15px;
+    width: 45%;
+    justify-content: left;
+}
+#Homepage ul li{
+    display: flex;
+    list-style: none;
+    display: inline;
+    padding: 5px;
+    width:80%;
+    justify-content: center;
+}
+#Homepage a{
+    color: #242321;
+}
+#Homepage a:hover{
+    color: #46433e;
+}
+.Title h1{
+    color: rgba(164, 18, 18, 0.525);
+    width: 20%;
+    font-size: 20px;
+}
+.Title img{
+    width: 15px;
+    margin: 10px;
+}
+.MainContainer {
+    display: flex; /* Añadido: Convertir el contenedor en un contenedor flexible */
+    background-color: rgb(241, 239, 238);
+    width: 80%;
+    justify-content: center;
+    margin: auto; /* Ajustado: Margen automático en lugar de valores específicos */
+    padding: 20px;
+}
+
+.MainContainer img {
+    width: 50%; /* Ajustado: Cambiado a 50% para dejar espacio para el texto */
+    margin-right: 20px; /* Añadido: Agregado margen derecho para separar la imagen del texto */
+}
+
+.MainContainer p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%; /* Añadido: Limitar el ancho del texto */
+}
+.TitleGirls{
+    display: flex;
+    background-color: #f1efee;
+    color: rgba(164, 18, 18, 0.525);
+    width: 80%;
+    justify-content: center;
+    margin: auto; /* Ajustado: Margen automático en lugar de valores específicos */
+    padding: 20px;
+}
+.TitleGirls img{
+    width: 25px;
+    margin: 10px;
+    color: rgba(164, 18, 18, 0.525);
+}
+.First {
+    background-color: #f1efee;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.First img {
+    width: 35vh;
+    margin: 10px;
+}
+.First b {
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.First p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+}
+.Second {
+    background-color: #f1efee;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+}
+.Second img{
+    width: 35vh;
+    margin: 10px;
+}
+.Second b {
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.Second p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+}
+.Third {
+    background-color: #f1efee;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 20px;
+}
+.Third img{
+    width: 35vh;
+    margin: 10px;
+}
+.Third b {
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.Third p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+}
+.TitleBoys{
+    display: flex;
+    background-color: #f1efee;
+    color: rgba(164, 18, 18, 0.525);
+    width: 80%;
+    justify-content: center;
+    margin: auto; /* Ajustado: Margen automático en lugar de valores específicos */
+    padding: 20px;
+}
+.TitleBoys img{
+    width: 25px;
+    margin: 10px;
+    color: rgba(164, 18, 18, 0.525);
+}
+.SecondaryContainer {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.SecondaryContainer img {
+    width: 50%; /* Ajustado: Cambiado a 50% para dejar espacio para el texto */
+    margin-right: 20px; /* Añadido: Agregado margen derecho para separar la imagen del texto */
+}
+
+.SecondaryContainer p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%; /* Añadido: Limitar el ancho del texto */
+}
+
+.ContainerOne {
+    background-color: #f1efee;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.ContainerOne img {
+    width: 35vh;
+    margin: 10px auto;
+}
+.ContainerOne b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.ContainerOne p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+}
+.ContainerTwo {
+    background-color: #f1efee;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 20px;
+}
+
+.ContainerTwo .Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContainerTwo img {
+    width: 35vh;
+    margin: 10px;
+}
+
+.ContainerTwo b {
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+
+.ContainerTwo p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+}
+
+.ContainerThree {
+    background-color: #f1efee;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 20px;
+}
+.ContainerThree img{
+    width: 35vh;
+    margin: 10px;
+}
+.ContainerThree b {
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.ContainerThree p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+}
