@@ -34,13 +34,20 @@ body {
 #Homepage a:hover{
     color: #46433e;
 }
+.ContainerImages {
+    width: 160vh; 
+    height: 550px;
+    background-repeat: no-repeat;
+    background-image: url(./assets/images/34e.jpg);
+    margin: 10px 125px;
+}
 .Title h1{
     color: rgba(164, 18, 18, 0.525);
-    width: 20%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 35px;
 }
 .Title img{
-    width: 15px;
+    width: 20px;
     margin: 10px;
 }
 .MainContainer {
