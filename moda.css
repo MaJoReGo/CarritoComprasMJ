@@ -34,6 +34,7 @@ body {
 #Homepage a:hover{
     color: #46433e;
 }
+
 .FatherContainer{
     display:flex;
     flex-direction: row;
@@ -43,21 +44,22 @@ body {
 .ContainerImage img {
     flex-direction: right;
     align-items: right;
-    max-width: 50vh; /* Ajusta el ancho de la imagen según tus necesidades */
-    margin: 10px; /* Ajusta el margen entre la imagen y el texto */
+    max-width: 50vh; 
+    margin: 10px; 
 }
 
-.MainImage {
+.MainText {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 5px;
     display: flex;
 }
 
 .MainText h1{
     margin: 0;
     flex-direction: column;
+    color: rgba(164, 18, 18, 0.525); 
 }
 .MainText p {
     margin: 0;
@@ -66,4 +68,67 @@ body {
 .MainText b {
     margin: 0;
     flex-direction: column;
+    color: rgba(164, 18, 18, 0.525);
+}
+
+.SecondaryContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #c3bdb9;
+}
+
+.SecondText {
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin: 80px 0;
+    display: flex;
+}
+
+.SecondText h1{
+    margin: 0;
+    flex-direction: column;
+    color: rgba(164, 18, 18, 0.525); 
+}
+.SecondText p {
+    margin: 0;
+    flex-direction: column;
+}
+.SecondText b {
+    margin: 0;
+    flex-direction: column;
+    color: rgba(164, 18, 18, 0.525);
+}
+.SecondContainerImage img {
+    flex-direction: left;
+    align-items: left;
+    max-width: 50vh; 
+    margin: 10px;
+}
+
+
+.ThirdContainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #d9d3d1;
+}
+.ThirdContainerImage img{
+    flex-direction: left;
+    align-items: left;
+    max-width: 50vh; 
+    margin: 10px;
+}
+.FourthContainerImage img{
+    flex-direction: left;
+    align-items: left;
+    max-width: 50vh; 
+    margin: 10px;
+}
+.FifthContainerImage img{
+    flex-direction: left;
+    align-items: left;
+    max-width: 50vh; 
+    margin: 10px;
 }
