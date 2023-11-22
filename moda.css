@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+
+
+body {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    width: 100%;
+    background-color: #d9d3d1;
+    color: #242321;
+    margin: auto;
+  }
+#Homepage{
+    display: flex;
+    width: 100%;
+    background-color: #c3bdb9;
+}
+#Homepage h1{
+    display: flex;
+    margin: 10px 100px;
+    width: 70%;
+    justify-content: left;
+}
+#Homepage ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    width: 30%;
+    justify-content: left;
+}
+#Homepage a{
+    color: #242321;
+}
+#Homepage a:hover{
+    color: #46433e;
+}
+.FatherContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ContainerImage img {
+    flex-direction: right;
+    align-items: right;
+    max-width: 50vh; /* Ajusta el ancho de la imagen según tus necesidades */
+    margin: 10px; /* Ajusta el margen entre la imagen y el texto */
+}
+
+.MainImage {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    display: flex;
+}
+
+.MainText h1{
+    margin: 0;
+    flex-direction: column;
+}
+.MainText p {
+    margin: 0;
+    flex-direction: column;
+}
+.MainText b {
+    margin: 0;
+    flex-direction: column;
+}
