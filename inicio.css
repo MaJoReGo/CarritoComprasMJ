@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+
+
+body {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    width: 100%;
+    background-color: #d9d3d1;
+    color: #242321;
+    margin: auto;
+  }
+#Homepage{
+    display: flex;
+    width: 100%;
+    background-color: #c3bdb9;
+}
+#Homepage h1{
+    display: flex;
+    margin: 10px 100px;
+    width: 70%;
+    justify-content: left;
+}
+#Homepage ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    width: 30%;
+    justify-content: left;
+}
+#Homepage a{
+    color: #242321;
+}
+#Homepage a:hover{
+    color: #46433e;
+}
+.TitleFirst{
+    color: rgba(164, 18, 18, 0.525);
+}
+.TitleFirst img{
+    width: 25px;
+    margin: 10px;
+}
+.FirstContainer{
+    background-color: #eeeff1;
+    width: 80%;
+    justify-content: center;
+    margin: 10px 150px;
+    padding: 20px;
+}
+.FirstContainer img{
+    width: 100%;
+}
+.FirstContainer p{
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+}
+.SecondContainer {
+    background-color: #f1efee;
+    width: 85%;
+    justify-content: center;
+    margin: 10px 100px;
+    padding: 20px;
+}
+
+.SecondContainer img {
+    width: 25%;
+}
+
+.SecondContainer p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+}
+.ThirdContainer {
+    background-color: #f1efee;
+    width: 85%;
+    justify-content: center;
+    margin: 10px 100px;
+    padding: 20px;
+}
+.ThirdContainer h1{
+    color: rgba(164, 18, 18, 0.525);
+}
+.ThirdContainer h1 img{
+    width: 25px;
+    margin: 10px;
+}
+.ThirdContainer img {
+    width: 25%;
+}
+
+.ThirdContainer p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+}
