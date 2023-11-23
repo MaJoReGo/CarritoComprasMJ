@@ -35,11 +35,19 @@ body {
     color: #46433e;
 }
 .ContainerImages {
-    width: 160vh; 
-    height: 500px;
-    background-repeat: no-repeat;
-    background-image: url(./assets/images/str.jpg);
-    margin: 0 125px;
+    width: 100%;
+    margin: 10px auto; /* auto en los lados izquierdo y derecho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ContainerImages img {
+    width: 35%; /* Para hacer que la imagen ocupe todo el espacio horizontal del contenedor */
+    display: block; /* Elimina el espacio extra que podría aparecer debajo de la imagen */
+    justify-content: center;
+    align-items: center;
 }
 
 .TitleFirst{
@@ -47,7 +55,6 @@ body {
     width: 100%;
 }
 .TitleFirst img{
-    color: rgba(164, 18, 18, 0.525);
     width: 20px;
     margin: 0 10px;
 }
