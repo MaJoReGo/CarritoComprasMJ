@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
 
-
 body {
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -10,29 +9,38 @@ body {
     color: #242321;
     margin: auto;
   }
+
 #Homepage{
     display: flex;
     width: 100%;
     background-color: #c3bdb9;
 }
-#Homepage h1{
-    display: flex;
-    margin: 10px 100px;
-    width: 70%;
-    justify-content: left;
+#Homepage h1 {
+    margin: 0; /* Eliminé el margen superior e inferior del h1 para que se vea mejor */
 }
-#Homepage ul li{
+
+#Homepage ul {
     list-style: none;
-    display: inline;
-    padding: 10px;
-    width: 30%;
-    justify-content: left;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos de la lista a la derecha */
+    width: 70%;
 }
-#Homepage a{
+
+#Homepage ul li {
+    margin-right: 20px; /* Añadí un margen entre los elementos de la lista para separarlos */
+}
+
+#Homepage a {
+    text-decoration: none;
     color: #242321;
 }
-#Homepage a:hover{
+
+#Homepage a:hover {
     color: #46433e;
+}
+
+#Homepage .icon img {
+    width: 20px; /* Ajusta el tamaño de la imagen del carrito según tus necesidades */
 }
 
 .FatherContainer{
@@ -41,7 +49,7 @@ body {
     justify-content: space-evenly;
 }
 
-.ContainerImage img {
+.ContainerImages img {
     flex-direction: right;
     align-items: right;
     max-width: 50vh; 
@@ -95,16 +103,12 @@ body {
     margin: 0;
     flex-direction: column;
 }
-.SecondText b {
-    margin: 0;
-    flex-direction: column;
-    color: rgba(164, 18, 18, 0.525);
-}
+
 .SecondContainerImage img {
     flex-direction: left;
     align-items: left;
     max-width: 50vh; 
-    margin: 10px;
+    margin: 40px 10px;
 }
 
 

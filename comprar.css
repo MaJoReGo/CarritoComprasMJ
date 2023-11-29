@@ -9,198 +9,313 @@ body {
     color: #242321;
     margin: auto;
   }
+
 #Homepage{
     display: flex;
     width: 100%;
     background-color: #c3bdb9;
 }
-#Homepage h1{
-    display: flex;
-    margin: 10px 15px;
-    width: 45%;
-    justify-content: left;
+#Homepage h1 {
+    margin: 0; /* Eliminé el margen superior e inferior del h1 para que se vea mejor */
 }
-#Homepage ul li{
-    display: flex;
+
+#Homepage ul {
     list-style: none;
-    display: inline;
-    padding: 5px;
-    width:80%;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos de la lista a la derecha */
+    width: 70%;
 }
-#Homepage a{
+
+#Homepage ul li {
+    margin-right: 20px; /* Añadí un margen entre los elementos de la lista para separarlos */
+}
+
+#Homepage a {
+    text-decoration: none;
     color: #242321;
 }
-#Homepage a:hover{
+
+#Homepage a:hover {
     color: #46433e;
 }
+
+#Homepage .icon img {
+    width: 20px; /* Ajusta el tamaño de la imagen del carrito según tus necesidades */
+}
+
+
 .ContainerImages {
-    width: 160vh; 
-    height: 550px;
-    background-repeat: no-repeat;
-    background-image: url(./assets/images/34e.jpg);
-    margin: 10px 125px;
+    width: 100%; 
+    margin: 10px 0;
+}
+.ContainerImages img {
+    width: 50vh; 
+    margin: 10px 0;
 }
 .Title h1{
     color: rgba(164, 18, 18, 0.525);
     width: 100%;
-    font-size: 35px;
 }
 .Title img{
     width: 20px;
     margin: 10px;
 }
-.MainContainer {
-    display: flex; /* Añadido: Convertir el contenedor en un contenedor flexible */
-    background-color: rgb(241, 239, 238);
-    width: 80%;
-    justify-content: center;
-    margin: auto; /* Ajustado: Margen automático en lugar de valores específicos */
-    padding: 20px;
-}
 
-.MainContainer img {
-    width: 50%; /* Ajustado: Cambiado a 50% para dejar espacio para el texto */
-    margin-right: 20px; /* Añadido: Agregado margen derecho para separar la imagen del texto */
-}
-
-.MainContainer p {
-    margin: 10px 0;
-    font-size: 15px;
-    color: #242321;
-    font-family: 'Playfair Display', serif;
-    width: 50%; /* Añadido: Limitar el ancho del texto */
-}
 .TitleGirls{
     display: flex;
     background-color: #f1efee;
     color: rgba(164, 18, 18, 0.525);
-    width: 80%;
+    width: 100%;
     justify-content: center;
-    margin: auto; /* Ajustado: Margen automático en lugar de valores específicos */
-    padding: 20px;
+    margin: auto;
 }
 .TitleGirls img{
     width: 25px;
     margin: 10px;
     color: rgba(164, 18, 18, 0.525);
 }
+
+.MainContainer {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
 .First {
     background-color: #f1efee;
-    width: 100%;
     justify-content: space-between;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .First img {
-    width: 35vh;
-    margin: 10px;
+    width: 22vh;
+    margin: 10px auto;
 }
 .First b {
-    margin: 10px 0;
+    margin: 10px auto;
     font-size: 15px;
     color: rgba(164, 18, 18, 0.525);
     font-family: 'Playfair Display', serif;
 }
 .First p {
-    margin: 10px 0;
+    margin: 10px 100px;
     font-size: 15px;
     color: #242321;
     font-family: 'Playfair Display', serif;
-    width: 100%;
+    width: 50%;
+}
+.ButtonFirst {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFirst button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonFirst button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
 }
 .Second {
     background-color: #f1efee;
-    width: 100%;
     justify-content: space-between;
-    margin: auto;
+    margin: 10px auto;
 }
-.Second img{
-    width: 35vh;
+
+.Second img {
+    width: 22vh;
     margin: 10px;
 }
+
 .Second b {
     margin: 10px 0;
     font-size: 15px;
     color: rgba(164, 18, 18, 0.525);
     font-family: 'Playfair Display', serif;
 }
+
 .Second p {
-    margin: 10px 0;
+    margin: 10px 100px;
     font-size: 15px;
     color: #242321;
     font-family: 'Playfair Display', serif;
-    width: 100%;
+    width: 50%;
 }
-.Third {
+.ButtonSecond {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonSecond button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonSecond button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.Third{
     background-color: #f1efee;
-    width: 100%;
     justify-content: space-between;
     margin: 10px auto;
-    padding: 20px;
 }
 .Third img{
-    width: 35vh;
+    width: 22vh;
     margin: 10px;
 }
 .Third b {
-    margin: 10px 0;
+    margin: 10px auto;
     font-size: 15px;
     color: rgba(164, 18, 18, 0.525);
     font-family: 'Playfair Display', serif;
 }
 .Third p {
-    margin: 10px 0;
+    margin: 10px 100px;
     font-size: 15px;
     color: #242321;
     font-family: 'Playfair Display', serif;
-    width: 100%;
+    width: 50%;
 }
+.ButtonThird {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonThird button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonThird button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.Fourth{
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.Fourth img{
+    width: 22vh;
+    margin: 10px;
+}
+.Fourth b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.Fourth p {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFourth {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFourth button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonFourth button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.Fifty{
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.Fifty img{
+    width: 22vh;
+    margin: 10px;
+}
+.Fifty b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.Fifty p {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFifty {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFifty button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonFifty button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
 .TitleBoys{
     display: flex;
     background-color: #f1efee;
     color: rgba(164, 18, 18, 0.525);
-    width: 80%;
+    width: 100%;
     justify-content: center;
-    margin: auto; /* Ajustado: Margen automático en lugar de valores específicos */
-    padding: 20px;
+    margin: auto;
 }
 .TitleBoys img{
     width: 25px;
     margin: 10px;
     color: rgba(164, 18, 18, 0.525);
 }
+
 .SecondaryContainer {
     display: flex;
     background-color: rgb(241, 239, 238);
-    width: 80%;
+    width: 100%;
     justify-content: center;
-    margin: auto;
-    padding: 20px;
-}
-
-.SecondaryContainer img {
-    width: 50%; /* Ajustado: Cambiado a 50% para dejar espacio para el texto */
-    margin-right: 20px; /* Añadido: Agregado margen derecho para separar la imagen del texto */
-}
-
-.SecondaryContainer p {
-    margin: 10px 0;
-    font-size: 15px;
-    color: #242321;
-    font-family: 'Playfair Display', serif;
-    width: 50%; /* Añadido: Limitar el ancho del texto */
+    margin: 0;
 }
 
 .ContainerOne {
     background-color: #f1efee;
-    width: 100%;
     justify-content: space-between;
     margin: 10px auto;
 }
 
 .ContainerOne img {
-    width: 35vh;
+    width: 22vh;
     margin: 10px auto;
 }
 .ContainerOne b {
@@ -210,28 +325,38 @@ body {
     font-family: 'Playfair Display', serif;
 }
 .ContainerOne p {
-    margin: 10px 0;
+    margin: 10px 100px;
     font-size: 15px;
     color: #242321;
     font-family: 'Playfair Display', serif;
-    width: 100%;
+    width: 50%;
 }
-.ContainerTwo {
-    background-color: #f1efee;
-    width: 100%;
-    justify-content: space-between;
-    margin: 5px;
-    padding: 20px;
+.ButtonContainerOne {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonContainerOne button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
 }
 
-.ContainerTwo .Item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.ButtonContainerOne button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.ContainerTwo {
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
 }
 
 .ContainerTwo img {
-    width: 35vh;
+    width: 22vh;
     margin: 10px;
 }
 
@@ -243,34 +368,636 @@ body {
 }
 
 .ContainerTwo p {
-    margin: 10px 0;
+    margin: 10px 100px;
     font-size: 15px;
     color: #242321;
     font-family: 'Playfair Display', serif;
-    width: 100%;
+    width: 50%;
+}
+.ButtonContainerTwo{
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonContainerTwo button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonContainerTwo button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
 }
 
 .ContainerThree {
     background-color: #f1efee;
-    width: 100%;
     justify-content: space-between;
-    margin: 5px;
-    padding: 20px;
+    margin: 10px auto;
 }
 .ContainerThree img{
-    width: 35vh;
+    width: 22vh;
     margin: 10px;
 }
 .ContainerThree b {
-    margin: 10px 0;
+    margin: 10px auto;
     font-size: 15px;
     color: rgba(164, 18, 18, 0.525);
     font-family: 'Playfair Display', serif;
 }
 .ContainerThree p {
-    margin: 10px 0;
+    margin: 10px 100px;
     font-size: 15px;
     color: #242321;
     font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonContainerThree{
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonContainerThree button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonContainerThree button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.ContainerFourth {
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.ContainerFourth img{
+    width: 22vh;
+    margin: 10px;
+}
+.ContainerFourth b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.ContainerFourth p {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonContainerFourth {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonContainerFourth button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonContainerFourth button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.ContainerFifty {
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.ContainerFifty img{
+    width: 22vh;
+    margin: 10px;
+}
+.ContainerFifty b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.ContainerFifty p {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonContainerFifty {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonContainerFifty button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonContainerFifty button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+
+
+.TitleWomen{
+    display: flex;
+    background-color: #f1efee;
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+.TitleWomen img{
+    width: 25px;
+    margin: 10px;
+    color: rgba(164, 18, 18, 0.525);
+}
+.ContainerImages {
+    width: 100%; 
+    margin: 10px 0;
+}
+.TitleContainerTwo h1{
+    color: rgba(164, 18, 18, 0.525);
     width: 100%;
 }
+.TitleContainerTwo img{
+    width: 20px;
+    margin: 10px;
+}
+.ContainerImagesFemenine{
+width: 100%; 
+margin: 10px 0;
+}
+.ContainerImagesFemenine img{
+    width: 50vh; 
+    margin: 10px 0;
+    }
+
+.MainContainerFemenine {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+.FirstFemenine {
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.FirstFemenine img {
+    width: 22vh;
+    margin: 10px auto;
+}
+.FirstFemenine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FirstFemenine p {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFirstFemenine {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFirstFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonFirstFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+.SecondFemenine {
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.SecondFemenine img {
+    width: 22vh;
+    margin: 10px;
+}
+
+.SecondFemenine b {
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+
+.SecondFemenine p {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonSecondFemenine {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonSecondFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonSecondFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.ThirdFemenine{
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.ThirdFemenine img{
+    width: 22vh;
+    margin: 10px;
+}
+.ThirdFemenine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.ThirdFemenine p {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonThirdFemenine {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonThirdFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonThirdFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FourthFemenine{
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.FourthFemenine img{
+    width: 22vh;
+    margin: 10px;
+}
+.FourthFemenine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FourthFemenine p {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFourthFemenine {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFourthFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonFourthFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FiftyFemenine{
+    background-color: #f1efee;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.FiftyFemenine img{
+    width: 22vh;
+    margin: 10px;
+}
+.FiftyFemenine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FiftyFemenine p {
+    margin: 10px 100px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ButtonFiftyFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ButtonFiftyFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+
+.TitleMen{
+    display: flex;
+    background-color: #f1efee;
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+.TitleMen img{
+    width: 25px;
+    margin: 10px;
+    color: rgba(164, 18, 18, 0.525);
+}
+.ContainerImagesMasculine {
+    width: 100%; 
+    margin: 10px 0;
+}
+.TitleContainerThird h1{
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+}
+.TitleContainerThird img{
+    width: 20px;
+    margin: 10px;
+}
+.ContainerImagesMasculine{
+width: 100%; 
+margin: 10px 0;
+}
+.ContainerImagesMasculine img{
+    width: 50vh; 
+    margin: 10px 0;
+    }
+
+.ContainerImagesMasculine{
+    width: 100%; 
+    margin: 10px 0;
+    }
+    .ContainerImagesMasculine img{
+        width: 50vh; 
+        margin: 10px 0;
+        }
+    
+    .MainContainerMasculine {
+        display: flex;
+        background-color: rgb(241, 239, 238);
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .FirstMasculine {
+        background-color: #f1efee;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+    
+    .FirstMasculine img {
+        width: 22vh;
+        margin: 10px auto;
+    }
+    .FirstMasculine b {
+        margin: 10px auto;
+        font-size: 15px;
+        color: rgba(164, 18, 18, 0.525);
+        font-family: 'Playfair Display', serif;
+    }
+    .FirstMasculine p {
+        margin: 10px 100px;
+        font-size: 15px;
+        color: #242321;
+        font-family: 'Playfair Display', serif;
+        width: 50%;
+    }
+    .ButtonFirstMasculine {
+        margin: 10px 100px;
+        font-size: 15px;
+        color: #242321;
+        font-family: 'Playfair Display', serif;
+        width: 50%;
+    }
+    .ButtonFirstMasculine button{
+        border-radius: 10px;
+        background-color: rgba(175, 102, 102, 0.234);
+        padding: 10px;
+        border: rgba(175, 102, 102, 0.234);
+    }
+    
+    .ButtonFirstMasculine button:hover{
+        background-color: rgba(89, 24, 24, 0.234);
+    }
+
+
+    .ThirdMasculine {
+        background-color: #f1efee;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+    
+    .ThirdMasculine img {
+        width: 22vh;
+        margin: 10px;
+    }
+    
+    .ThirdMasculine b {
+        margin: 10px 0;
+        font-size: 15px;
+        color: rgba(164, 18, 18, 0.525);
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .ThirdMasculine p {
+        margin: 10px 100px;
+        font-size: 15px;
+        color: #242321;
+        font-family: 'Playfair Display', serif;
+        width: 50%;
+    }
+    .ButtonThirdMasculine {
+        margin: 10px 100px;
+        font-size: 15px;
+        color: #242321;
+        font-family: 'Playfair Display', serif;
+        width: 50%;
+    }
+    .ButtonThirdMasculine button{
+        border-radius: 10px;
+        background-color: rgba(175, 102, 102, 0.234);
+        padding: 10px;
+        border: rgba(175, 102, 102, 0.234);
+    }
+    
+    .ButtonThirdMasculine button:hover{
+        background-color: rgba(89, 24, 24, 0.234);
+    }
+    
+    .ThirdMasculine {
+        background-color: #f1efee;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+    .ThirdMasculine img{
+        width: 22vh;
+        margin: 10px;
+    }
+    .ThirdMasculine b {
+        margin: 10px auto;
+        font-size: 15px;
+        color: rgba(164, 18, 18, 0.525);
+        font-family: 'Playfair Display', serif;
+    }
+    .ThirdMasculine p {
+        margin: 10px 100px;
+        font-size: 15px;
+        color: #242321;
+        font-family: 'Playfair Display', serif;
+        width: 50%;
+    }
+    .ButtonThirdMasculine {
+        margin: 10px 100px;
+        font-size: 15px;
+        color: #242321;
+        font-family: 'Playfair Display', serif;
+        width: 50%;
+    }
+    .ButtonThirdMasculine button{
+        border-radius: 10px;
+        background-color: rgba(175, 102, 102, 0.234);
+        padding: 10px;
+        border: rgba(175, 102, 102, 0.234);
+    }
+    
+    .ButtonThirdMasculine button:hover{
+        background-color: rgba(89, 24, 24, 0.234);
+    }
+    
+    .FourthMasculine {
+        background-color: #f1efee;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+    .FourthMasculine img{
+        width: 22vh;
+        margin: 10px;
+    }
+    .FourthMasculine b {
+        margin: 10px auto;
+        font-size: 15px;
+        color: rgba(164, 18, 18, 0.525);
+        font-family: 'Playfair Display', serif;
+    }
+    .FourthMasculine p {
+        margin: 10px 100px;
+        font-size: 15px;
+        color: #242321;
+        font-family: 'Playfair Display', serif;
+        width: 50%;
+    }
+    .ButtonFourthMasculine {
+        margin: 10px 100px;
+        font-size: 15px;
+        color: #242321;
+        font-family: 'Playfair Display', serif;
+        width: 50%;
+    }
+    .ButtonFourthMasculine button{
+        border-radius: 10px;
+        background-color: rgba(175, 102, 102, 0.234);
+        padding: 10px;
+        border: rgba(175, 102, 102, 0.234);
+    }
+    
+    .ButtonFourthMasculine button:hover{
+        background-color: rgba(89, 24, 24, 0.234);
+    }
+    
+    .FiftyMasculine {
+        background-color: #f1efee;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+    .FiftyMasculine img{
+        width: 22vh;
+        margin: 10px;
+    }
+    .FiftyMasculine b {
+        margin: 10px auto;
+        font-size: 15px;
+        color: rgba(164, 18, 18, 0.525);
+        font-family: 'Playfair Display', serif;
+    }
+    .FiftyMasculine p {
+        margin: 10px 100px;
+        font-size: 15px;
+        color: #242321;
+        font-family: 'Playfair Display', serif;
+        width: 50%;
+    }
+    .ButtonFiftyMasculine button{
+        border-radius: 10px;
+        background-color: rgba(175, 102, 102, 0.234);
+        padding: 10px;
+        border: rgba(175, 102, 102, 0.234);
+    }
+    
+    .ButtonFiftyMasculine button:hover{
+        background-color: rgba(89, 24, 24, 0.234);
+    }
