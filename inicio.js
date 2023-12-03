@@ -1,7 +1,7 @@
 var additionalImages = [
-    "./assets/images/554.jpg",
-    "./assets/images/543.jpg",
-    "./assets/images/yyty.jpg"
+    "./assets/images/tienda2.jpg",
+    "./assets/images/tienda3.jpg",
+    "./assets/images/tienda4.jpg"
 ];
 
 var currentImageIndex = 0;

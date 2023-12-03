@@ -16,7 +16,7 @@ body {
     background-color: #c3bdb9;
 }
 #Homepage h1 {
-    margin: 0; /* Eliminé el margen superior e inferior del h1 para que se vea mejor */
+    margin: 0 20px; /* Eliminé el margen superior e inferior del h1 para que se vea mejor */
 }
 
 #Homepage ul {
@@ -42,6 +42,7 @@ body {
 #Homepage .icon img {
     width: 20px; /* Ajusta el tamaño de la imagen del carrito según tus necesidades */
 }
+
 .ContainerImages {
     width: 100%;
     margin: 10px auto; /* auto en los lados izquierdo y derecho */

@@ -1,7 +1,7 @@
 var additionalImages = [
-    "./assets/images/hhhs.jpg",
-    "./assets/images/faldaRosaPana.jpg",
-    "./assets/images/trajeRosaPana.jpg"
+    "./assets/images/vestidoNaranjaLentejuelas.jpg",
+    "./assets/images/camisaVerde.jpg",
+    "./assets/images/chaquetaRosa.jpg"
 ];
 
 var currentImageIndex = 0;
@@ -16,9 +16,9 @@ setTimeout(changeImage, 3000);
 setInterval(changeImage, 3000);
 
 var additionalImagesSecond = [
-    "./assets/images/camisaRosaClaro.jpg",
-    "./assets/images/faldaRosaPana.jpg",
-    "./assets/images/trajeRosaPana.jpg"
+    "./assets/images/vestidoAcanaladoAzul.jpg",
+    "./assets/images/camisaGris.jpg",
+    "./assets/images/bufandaNaranja.jpg"
 ];
 
 var currentImageIndex = 0;

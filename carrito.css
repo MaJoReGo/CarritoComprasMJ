@@ -1,0 +1,1120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    width: 100%;
+    background-color: #d9d3d1;
+    color: #242321;
+    margin: auto;
+  }
+
+#Homepage{
+    display: flex;
+    width: 100%;
+    background-color: #c3bdb9;
+}
+#Homepage h1 {
+    margin: 0 20px; /* Eliminé el margen superior e inferior del h1 para que se vea mejor */
+}
+
+#Homepage ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos de la lista a la derecha */
+    width: 70%;
+}
+
+#Homepage ul li {
+    margin-right: 20px; /* Añadí un margen entre los elementos de la lista para separarlos */
+}
+
+#Homepage a {
+    text-decoration: none;
+    color: #242321;
+}
+
+#Homepage a:hover {
+    color: #46433e;
+}
+
+#Homepage .icon img {
+    width: 20px; /* Ajusta el tamaño de la imagen del carrito según tus necesidades */
+}
+
+.TitleKids{
+    width: 100%;
+}
+
+.TitleKids h1{
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+}
+
+.TitleKids img{
+    width: 20px;
+    margin: 10px;
+}
+
+.ContainerImagesGirls {
+    width: 100%; 
+    margin: 10px 0;
+}
+
+.ContainerImagesGirls img {
+    width: 50vh; 
+    margin: 10px 0;
+}
+
+.TitleGirls{
+    display: flex;
+    background-color: #f1efee;
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+.MainContainerGirls {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+#listProductsGirls {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+.FirstProductGirl {
+    background-color: #f1efee;
+}
+
+.FirstProductGirl img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FirstProductGirl img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FirstProductGirl b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FirstProductGirl p {
+    margin: 10px 65px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FirstProductGirl Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FirstProductGirl button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.FirstProductGirl button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.SecondProductGirl {
+    background-color: #f1efee;
+}
+
+.SecondProductGirl img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.SecondProductGirl img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.SecondProductGirl b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.SecondProductGirl p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.SecondProductGirl Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.SecondProductGirl button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.SecondProductGirl button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+      
+.ThirdProductGirl {
+    background-color: #f1efee;
+}
+
+.ThirdProductGirl img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.ThirdProductGirl img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.ThirdProductGirl b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.ThirdProductGirl p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ThirdProductGirl Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ThirdProductGirl button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ThirdProductGirl button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FourthProductGirl {
+    background-color: #f1efee;
+}
+
+.FourthProductGirl img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FourthProductGirl img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FourthProductGirl b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FourthProductGirl p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FourthProductGirl Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 55%;
+}
+.FourthProductGirl button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+.FourthProductGirl button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FiftyProductGirl {
+    background-color: #f1efee;
+}
+
+.FiftyProductGirl img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FiftyProductGirl img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FiftyProductGirl b {
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FiftyProductGirl p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FiftyProductGirl Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FiftyProductGirl button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.FiftyProductGirl button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+
+.TitleBoys{
+    display: flex;
+    background-color: #f1efee;
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.MainContainerBoys {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+#listProductsBoys {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+
+}
+.FirstProductBoy {
+    background-color: #f1efee;
+}
+
+.FirstProductBoy img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FirstProductBoy img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FirstProductBoy b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FirstProductBoy p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FirstProductBoy Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FirstProductBoy button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.FirstProductBoy button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.SecondProductBoy {
+    background-color: #f1efee;
+}
+
+.SecondProductBoy img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.SecondProductBoy img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.SecondProductBoy b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.SecondProductBoy p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.SecondProductBoy Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.SecondProductBoy button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.SecondProductBoy button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+      
+.ThirdProductBoy {
+    background-color: #f1efee;
+}
+
+.ThirdProductBoy img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.ThirdProductBoy img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.ThirdProductBoy b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.ThirdProductBoy p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+
+.ThirdProductBoy Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ThirdProductBoy button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ThirdProductBoy button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FourthProductBoy {
+    background-color: #f1efee;
+}
+
+.FourthProductBoy img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FourthProductBoy img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FourthProductBoy b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FourthProductBoy p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FourthProductBoy Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 55%;
+}
+.FourthProductBoy button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+.FourthProductBoy button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FiftyProductBoy {
+    background-color: #f1efee;
+}
+
+.FiftyProductBoy img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FiftyProductBoy img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FiftyProductBoy b {
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FiftyProductBoy p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FiftyProductBoy Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FiftyProductBoy button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.FiftyProductBoy button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+
+.TitleContainerFemenine h1{
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+}
+.TitleContainerFemenine img{
+    width: 20px;
+    margin: 10px;
+}
+.ContainerImagesFemenine {
+width: 100%; 
+margin: 10px 0;
+}
+.ContainerImagesFemenine img{
+    width: 50vh; 
+    margin: 10px 0;
+    }
+
+.MainContainerFemenine {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+#listProductsFemenine {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+}
+.FirstProductFemenine {
+    background-color: #f1efee;
+}
+
+.FirstProductFemenine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FirstProductFemenine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FirstProductFemenine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FirstProductFemenine p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FirstProductFemenine Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FirstProductFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.FirstProductFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.SecondProductFemenine {
+    background-color: #f1efee;
+}
+
+.SecondProductFemenine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.SecondProductFemenine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.SecondProductFemenine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.SecondProductFemenine p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.SecondProductFemenine Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 55%;
+}
+.SecondProductFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.SecondProductFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+      
+.ThirdProductFemenine {
+    background-color: #f1efee;
+}
+
+.ThirdProductFemenine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.ThirdProductFemenine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.ThirdProductFemenine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.ThirdProductFemenine p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+
+.ThirdProductFemenine Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ThirdProductFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ThirdProductFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FourthProductFemenine {
+    background-color: #f1efee;
+}
+
+.FourthProductFemenine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FourthProductFemenine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FourthProductFemenine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FourthProductFemenine p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FourthProductFemenine Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FourthProductFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+.FourthProductFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FiftyProductFemenine {
+    background-color: #f1efee;
+}
+
+.FiftyProductFemenine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FiftyProductFemenine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FiftyProductFemenine b {
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FiftyProductFemenine p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FiftyProductFemenine Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 55%;
+}
+.FiftyProductFemenine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.FiftyProductFemenine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+
+.TitleContainerMasculine h1{
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+}
+.TitleContainerMasculine img{
+    width: 20px;
+    margin: 10px;
+}
+.ContainerImagesMasculine {
+width: 100%; 
+margin: 10px 0;
+}
+.ContainerImagesMasculine img{
+    width: 50vh; 
+    margin: 10px 0;
+    }
+
+.MainContainerMasculine {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+#listProductsMasculine {
+    display: flex;
+    background-color: rgb(241, 239, 238);
+    width: 100%;
+    justify-content: center;
+
+}
+.FirstProductMasculine {
+    background-color: #f1efee;
+}
+
+.FirstProductMasculine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FirstProductMasculine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FirstProductMasculine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FirstProductMasculine p {
+    margin: 10px 50px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FirstProductMasculine Button {
+    margin: 10px 25px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 55%;
+}
+.FirstProductMasculine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.FirstProductMasculine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.SecondProductMasculine {
+    background-color: #f1efee;
+}
+
+.SecondProductMasculine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.SecondProductMasculine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.SecondProductMasculine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.SecondProductMasculine p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.SecondProductMasculine Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.SecondProductMasculine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.SecondProductMasculine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+      
+.ThirdProductMasculine {
+    background-color: #f1efee;
+}
+
+.ThirdProductMasculine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.ThirdProductMasculine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.ThirdProductMasculine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.ThirdProductMasculine p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+
+.ThirdProductMasculine Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.ThirdProductMasculine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.ThirdProductMasculine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FourthProductMasculine {
+    background-color: #f1efee;
+}
+
+.FourthProductMasculine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FourthProductMasculine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FourthProductMasculine b {
+    margin: 10px auto;
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FourthProductMasculine p {
+    margin: 10px 70px;
+    font-size: 15px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FourthProductMasculine Button {
+    margin: 10px 50px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FourthProductMasculine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+.FourthProductMasculine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+.FiftyProductMasculine {
+    background-color: #f1efee;
+}
+
+.FiftyProductMasculine img:hover {
+    transform: scale(1.5); /* Cambia el valor según la escala que desees */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.FiftyProductMasculine img {
+    max-width: 22vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Agrega la misma transición a la imagen sin hover */
+}
+
+.FiftyProductMasculine b {
+    font-size: 15px;
+    color: rgba(164, 18, 18, 0.525);
+    font-family: 'Playfair Display', serif;
+}
+.FiftyProductMasculine p {
+    margin: 10px 50px;
+    font-size: 15px;
+    color: rgb(36, 35, 33);
+    font-family: "Playfair Display", serif;
+    width: 50%;
+}
+
+.FiftyProductMasculine Button {
+    margin: 10px 20px;
+    font-size: 12px;
+    color: #242321;
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+.FiftyProductMasculine button{
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+}
+
+.FiftyProductMasculine button:hover{
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+ul li{
+    list-style: none;
+}

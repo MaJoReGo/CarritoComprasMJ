@@ -16,7 +16,7 @@ body {
     background-color: #c3bdb9;
 }
 #Homepage h1 {
-    margin: 0; /* Eliminé el margen superior e inferior del h1 para que se vea mejor */
+    margin: 0 20px; /* Eliminé el margen superior e inferior del h1 para que se vea mejor */
 }
 
 #Homepage ul {
@@ -90,14 +90,14 @@ body {
     flex-direction: column;
     align-items: left;
     justify-content: left;
-    margin: 80px 0;
+    margin: 90px 0;
     display: flex;
 }
 
 .SecondText h1{
     margin: 0;
     flex-direction: column;
-    color: rgba(164, 18, 18, 0.525); 
+    color: rgba(26, 20, 20, 0.525); 
 }
 .SecondText p {
     margin: 0;
@@ -111,6 +111,27 @@ body {
     margin: 40px 10px;
 }
 
+.TextContainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    display: flex;
+}
+.TextContainer h1 {
+    margin: 10px 0;
+    flex-direction: column;
+    color: rgba(62, 20, 20, 0.525); 
+}
+.TextContainer p {
+    margin: 0;
+    flex-direction: column;
+}
+.TextContainer b {
+    margin: 0;
+    flex-direction: column;
+    color: rgba(70, 23, 23, 0.525);
+}
 
 .ThirdContainer {
     display:flex;

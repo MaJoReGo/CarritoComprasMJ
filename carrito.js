@@ -1,47 +1,99 @@
-// Lógica adicional para la página del carrito si es necesario
-        // Puedes utilizar JavaScript para manipular el DOM y mostrar los productos en el carrito
-        // Además, puedes incluir aquí la lógica para eliminar productos y otras interacciones en la página del carrito
-        document.addEventListener('DOMContentLoaded', function () {
-            // Función para mostrar el contenido del carrito en la página del carrito
-            function mostrarCarritoEnPagina() {
-                const listaCarrito = document.getElementById('listaCarrito');
-                const totalCarrito = document.getElementById('totalCarrito');
+const carrito = [];
 
-                // Limpiar contenido actual
-                listaCarrito.innerHTML = "";
+function agregarAlCarrito(button) {
+    const productoSeleccionado = button.parentElement;
+    const nombre = productoSeleccionado.dataset.nombre;
+    const precio = parseFloat(productoSeleccionado.dataset.precio);
+    let existencia = parseInt(productoSeleccionado.dataset.existencia);
 
-                // Iterar sobre productos en el carrito y agregar elementos a la lista
-                carrito.forEach(producto => {
-                    const li = document.createElement('li');
-                    li.textContent = `${producto.nombre} - Cantidad: ${producto.cantidad} - Precio: $${producto.precio.toFixed(2)}`;
+    if (existencia > 0) {
+        // Agregar al carrito
+        carrito.push({ nombre, precio });
 
-                    // Agregar botón de eliminar
-                    const botonEliminar = document.createElement('button');
-                    botonEliminar.textContent = 'Eliminar';
-                    botonEliminar.addEventListener('click', function () {
-                        eliminarProductoDelCarrito(producto.nombre);
-                        mostrarCarritoEnPagina(); // Actualizar la lista después de eliminar un producto
-                        actualizarEnlaceCarritoEnPagina(); // Actualizar el enlace del carrito en la página
-                    });
+        // Restar existencia y actualizar en la lista de productos
+        existencia--;
+        productoSeleccionado.dataset.existencia = existencia;
 
-                    li.appendChild(botonEliminar);
-                    listaCarrito.appendChild(li);
-                });
+        // Mostrar mensaje de confirmación
+        alert(`Se agregó ${nombre} al carrito. Existencia actual: ${existencia}`);
 
-                // Calcular y mostrar el total del carrito
-                const total = carrito.reduce((sum, producto) => sum + producto.cantidad * producto.precio, 0);
-                totalCarrito.textContent = `$${total.toFixed(2)}`;
-            }
+        // Actualizar la visualización del carrito
+        mostrarCarrito();
+    } else {
+        alert("Producto agotado");
+    }
+}
 
-            mostrarCarritoEnPagina(); // Mostrar el carrito al cargar la página del carrito
-        });
-        // Lógica adicional para la página del carrito si es necesario
-// Puedes utilizar JavaScript para manipular el DOM y mostrar los productos en el carrito
-// Además, puedes incluir aquí la lógica para eliminar productos y otras interacciones en la página del carrito
-document.getElementById('finalizarCompra').addEventListener('click', function () {
-    // Lógica para finalizar la compra, por ejemplo, enviar el pedido al servidor
-    alert('Compra finalizada. ¡Gracias por comprar!');
+function mostrarCarrito() {
+const listaCarrito = document.getElementById("listaCarrito");
+const totalCarrito = document.getElementById("totalCarrito");
+
+listaCarrito.innerHTML = "";
+let total = 0;
+
+carrito.forEach((producto, index) => {
+const li = document.createElement("li");
+
+const img = document.createElement("img");
+img.src = `./assets/images/${producto.nombre.replace(/\s+/g, '')}.jpg`;
+img.alt = producto.nombre;
+img.style.maxWidth = '50px';  // Puedes ajustar el tamaño de la imagen según tus preferencias
+img.style.maxHeight = '50px';
+li.appendChild(img);
+
+const nombrePrecio = document.createElement("div");
+nombrePrecio.innerHTML = `<b>${producto.nombre}</b> - $${producto.precio.toFixed(2)}`;
+
+const botonBorrar = document.createElement("button");
+botonBorrar.textContent = "Borrar Producto";
+botonBorrar.onclick = function () {
+    eliminarDelCarrito(index);
+};
+
+li.appendChild(nombrePrecio);
+li.appendChild(botonBorrar);
+listaCarrito.appendChild(li);
+
+total += producto.precio;
 });
 
+totalCarrito.textContent = total.toFixed(2);
+}
+function eliminarDelCarrito(index) {
+    const productoEliminado = carrito.splice(index, 1)[0];
 
+    // Restablecer existencia del producto eliminado en la lista de productos
+    const productoEnLista = document.querySelector(`[data-nombre="${productoEliminado.nombre}"]`);
+    productoEnLista.dataset.existencia = parseInt(productoEnLista.dataset.existencia) + 1;
 
+    // Actualizar la visualización del carrito
+    mostrarCarrito();
+}
+
+function vaciarCarrito() {
+    // Restablecer existencia de productos en el carrito al vaciarlo
+    carrito.forEach(producto => {
+        const productoEnLista = document.querySelector(`[data-nombre="${producto.nombre}"]`);
+        productoEnLista.dataset.existencia = parseInt(productoEnLista.dataset.existencia) + 1;
+    });
+
+    // Vaciar el carrito
+    carrito.length = 0;
+
+    // Actualizar la visualización del carrito
+    mostrarCarrito();
+}
+
+function comprarProductos() {
+    if (carrito.length > 0) {
+        alert("¡Gracias por tu compra! Productos comprados:\n" + obtenerProductosComprados());
+        // Puedes realizar acciones adicionales relacionadas con la compra aquí
+        vaciarCarrito();
+    } else {
+        alert("El carrito está vacío. Agrega productos antes de comprar.");
+    }
+}
+
+function obtenerProductosComprados() {
+    return carrito.map(producto => `${producto.nombre} - $${producto.precio.toFixed(2)}`).join('\n');
+}
