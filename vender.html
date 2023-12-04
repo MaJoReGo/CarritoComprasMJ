@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Harmony</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+<header>
+    <div id="Homepage">
+        <h1>Simple Harmony</h1>
+        <ul>
+            <li><b><a href="inicio.html">INICIO</a></b></li>
+            <li><b><a href="carrito.html">COMPRAR</a></b></li>
+            <li><b><a href="vender.html">VENDER</a></b></li>
+            <li><b><a href="moda.html">CONSEJOS</a></b></li>
+            <li class="icon"><b><a href="carrito.html" target="_blank"><img src="./icons/cart-outline.svg" alt="Carrito"></a></b></li>
+        </ul>
+    </div>
+</header>
+<section id="administrador">
+    <h1>¿Quieres agregar nuevos productos?</h1>
+    <form id="formularioProducto">
+        <label for="nombre">Nombre del Producto:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" step="0.01" required>
+
+        <label for="existencia">Existencia:</label>
+        <input type="number" id="existencia" required>
+
+        <label for="descripcion">Descripcion del Producto:</label>
+        <input type="text" id="descripcion" required>
+
+        <label for="imagen">URL de la Imagen:</label>
+        <input type="url" id="imagen" required>
+
+        <button type="button" onclick="agregarProducto()">Agregar Producto</button>
+    </form>
+
+    <h2>Lista de Productos</h2>
+    <ul id="listaProductos"></ul>
+</section>
+<script src="vender.js"></script>
+</body>
+</html>
