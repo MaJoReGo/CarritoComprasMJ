@@ -230,8 +230,8 @@ body {
       }
 
       .ContainerImages img {
-        max-width: 35vh;
-        margin: 75px 0;
+        width: 25vh;
+        margin: 50px 0;
     }
 
     .SecondText h1{
@@ -247,7 +247,7 @@ body {
     }
 
     .SecondContainerImage img {
-        width: 35vh;
+        width: 25vh;
         margin: 144px 10px;
     }
 
@@ -264,13 +264,13 @@ body {
     }
 
     .ThirdContainerImage img{
-        max-width: 25vh; 
+        max-width: 20vh; 
     }
     .FourthContainerImage img{
-        max-width: 25vh; 
+        width: 20vh; 
     }
     .FifthContainerImage img{
-        max-width: 25vh; 
+        width: 20vh; 
     }
   }
 
