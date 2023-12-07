@@ -1196,17 +1196,27 @@ ul li{
   
       #Homepage h1 {
           margin: 0 25px;
-          font-size: 20px;
+          font-size: 15px;
       }
   
       #Homepage ul {
           width: 50%;
-          font-size: 10px;
+          font-size: 5px;
       }
 
       .TitleKids img {
         width: 10px;
         margin: 5px 0px;
+    }
+
+    .TitleKids h1 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .ContainerImagesGirls img {
+        width: 20vh;
+        margin: 10px 0;
     }
 
     .FirstProductGirl,
@@ -1222,7 +1232,7 @@ ul li{
     .ThirdProductGirl img,
     .FourthProductGirl img,
     .FiftyProductGirl img{
-        width: 13vh;
+        width: 5vh;
     }
 
     .FirstProductGirl p,
@@ -1258,7 +1268,7 @@ ul li{
     .ThirdProductBoy img,
     .FourthProductBoy img,
     .FiftyProductBoy img{
-        width: 13vh;
+        width: 5vh;
     }
 
     .FirstProductBoy p,
@@ -1279,9 +1289,19 @@ ul li{
         font-size: 10px;
         padding: 9px 0;
     }
+
+    .TitleContainerFemenine h1 {
+        color: rgba(164, 18, 18, 0.525);
+        width: 100%;
+        font-size: 20px;
+    }
     .TitleContainerFemenine img {
         width: 10px;
         margin: 5px 0px;
+    }
+    .ContainerImagesFemenine img {
+        width: 20vh;
+        margin: 10px 0;
     }
 
     .FirstProductFemenine,
@@ -1297,7 +1317,7 @@ ul li{
     .ThirdProductFemenine img,
     .FourthProductFemenine img,
     .FiftyProductFemenine img{
-        width: 13vh;
+        width: 5vh;
     }
 
     .FirstProductFemenine p,
@@ -1319,9 +1339,20 @@ ul li{
         padding: 9px 0;
     }
 
+
+    .TitleContainerMasculine h1 {
+        color: rgba(164, 18, 18, 0.525);
+        width: 100%;
+        font-size: 20px;
+    }
     .TitleContainerMasculine img {
         width: 10px;
         margin: 5px 0px;
+    }
+
+    .ContainerImagesMasculineg img {
+        width: 20vh;
+        margin: 10px 0;
     }
 
     .FirstProductMasculine,
@@ -1337,7 +1368,7 @@ ul li{
     .ThirdProductMasculine img,
     .FourthProductMasculine img,
     .FiftyProductMasculine img{
-        width: 13vh;
+        width: 5vh;
     }
 
     .FirstProductMasculine p,
