@@ -264,13 +264,13 @@ body {
     }
 
     .ThirdContainerImage img{
-        max-width: 15vh; 
+        max-width: 10vh; 
     }
     .FourthContainerImage img{
-        width: 15vh; 
+        width: 10vh; 
     }
     .FifthContainerImage img{
-        width: 15vh; 
+        width: 10vh; 
     }
   }
 
