@@ -1176,16 +1176,20 @@ ul li{
     background-color: rgba(89, 24, 24, 0.234);
 }
 
+@media(max-width:1280px){
 
+}
 @media(max-width:1279px){
 
 }
-  
+@media(max-width:920px){
+
+}
   @media(max-width:768px){
    
   }
   
-  @media(max-width:480px){
+  @media(max-width:480px) {
     #Homepage{
         width: 100%;
       }
@@ -1199,20 +1203,159 @@ ul li{
           width: 50%;
           font-size: 10px;
       }
-      .FirstProductGirl img {
+
+      .TitleKids img {
+        width: 10px;
+        margin: 5px 0px;
+    }
+
+    .FirstProductGirl,
+    .SecondProductGirl,
+    .ThirdProductGirl,
+    .FourthProductGirl,
+    .FiftyProductGirl {
+        margin-right: 5px;
         width: 15vh;
     }
-    .SecondProductGirl img {
+    .FirstProductGirl img,
+    .SecondProductGirl img,
+    .ThirdProductGirl img,
+    .FourthProductGirl img,
+    .FiftyProductGirl img{
+        width: 13vh;
+    }
+
+    .FirstProductGirl p,
+    .SecondProductGirl p,
+    .ThirdProductGirl p,
+    .FourthProductGirl p,
+    .FiftyProductGirl p {
+        margin: 10px 15px;
+        font-size: 13px;
+    }
+
+    .FirstProductGirl button,
+    .SecondProductGirl button,
+    .ThirdProductGirl button,
+    .FourthProductGirl button,
+    .FiftyProductGirl button {
+        margin: 0;
+        font-size: 10px;
+        padding: 9px 0;
+    }
+
+    .FirstProductBoy,
+    .SecondProductBoy,
+    .ThirdProductBoy,
+    .FourthProductBoy,
+    .FiftyProductBoy {
+        margin-right: 5px;
+        width: 13vh;
+    }
+
+    .FirstProductBoy img,
+    .SecondProductBoy img,
+    .ThirdProductBoy img,
+    .FourthProductBoy img,
+    .FiftyProductBoy img{
+        width: 13vh;
+    }
+
+    .FirstProductBoy p,
+    .SecondProductBoy p,
+    .ThirdProductBoy p,
+    .FourthProductBoy p,
+    .FiftyProductBoy p {
+        margin: 10px 15px;
+        font-size: 13px;
+    }
+
+    .FirstProductBoy button,
+    .SecondProductBoy button,
+    .ThirdProductBoy button,
+    .FourthProductBoy button,
+    .FiftyProductBoy button {
+        margin: 0;
+        font-size: 10px;
+        padding: 9px 0;
+    }
+    .TitleContainerFemenine img {
+        width: 10px;
+        margin: 5px 0px;
+    }
+
+    .FirstProductFemenine,
+    .SecondProductFemenine,
+    .ThirdProductFemenine,
+    .FourthProductFemenine,
+    .FiftyProductFemenine {
         width: 15vh;
     }
-    .ThirdProductGirl img {
+
+    .FirstProductFemenine img,
+    .SecondProductFemenine img,
+    .ThirdProductFemenine img,
+    .FourthProductFemenine img,
+    .FiftyProductFemenine img{
+        width: 13vh;
+    }
+
+    .FirstProductFemenine p,
+    .SecondProductFemenine p,
+    .ThirdProductFemenine p,
+    .FourthProductFemenine p,
+    .FiftyProductFemenine p {
+        margin: 10px 15px;
+        font-size: 13px;
+    }
+
+    .FirstProductFemenine button,
+    .SecondProductFemenine button,
+    .ThirdProductFemenine button,
+    .FourthProductFemenine button,
+    .FiftyProductFemenine button {
+        margin: 0;
+        font-size: 10px;
+        padding: 9px 0;
+    }
+
+    .TitleContainerMasculine img {
+        width: 10px;
+        margin: 5px 0px;
+    }
+
+    .FirstProductMasculine,
+    .SecondProductMasculine,
+    .ThirdProductMasculine,
+    .FourthProductMasculine,
+    .FiftyProductMasculine {
         width: 15vh;
     }
-    .FourthProductGirl img {
-        width: 15vh;
+
+    .FirstProductMasculine img,
+    .SecondProductMasculine img,
+    .ThirdProductMasculine img,
+    .FourthProductMasculine img,
+    .FiftyProductMasculine img{
+        width: 13vh;
     }
-    .FiftyProductGirl img {
-        width: 15vh;
+
+    .FirstProductMasculine p,
+    .SecondProductMasculine p,
+    .ThirdProductMasculine p,
+    .FourthProductMasculine p,
+    .FiftyProductMasculine p {
+        margin: 10px 15px;
+        font-size: 13px;
     }
-    
-  }
+
+    .FirstProductMasculine button,
+    .SecondProductMasculine button,
+    .ThirdProductMasculine button,
+    .FourthProductMasculine button,
+    .FiftyProductMasculine button {
+        margin: 0;
+        font-size: 10px;
+        padding: 9px 0;
+    }
+}

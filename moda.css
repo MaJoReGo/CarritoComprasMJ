@@ -157,11 +157,31 @@ body {
     max-width: 50vh; 
     margin: 10px;
 }
-
+@media(max-width:1280px){
+    .ThirdContainerImage img{
+        max-width: 45vh; 
+    }
+    .FourthContainerImage img{
+        max-width: 45vh; 
+    }
+    .FifthContainerImage img{
+        max-width: 45vh; 
+    }
+}
 @media(max-width:1279px){
 
 }
-  
+@media(max-width:920px){
+    .ThirdContainerImage img{
+        max-width: 35vh; 
+    }
+    .FourthContainerImage img{
+        max-width: 35vh; 
+    }
+    .FifthContainerImage img{
+        max-width: 35vh; 
+    }
+}
   @media(max-width:768px){
     .ContainerImages img {
         max-width: 50vh;
@@ -253,3 +273,6 @@ body {
         max-width: 25vh; 
     }
   }
+
+
+  /*Moda ya tiene responsive check*/

@@ -184,10 +184,15 @@ ul li {
 }
 
 
+@media(max-width:1280px){
+
+}
 @media(max-width:1279px){
 
 }
-  
+@media(max-width:920px){
+
+}
   @media(max-width:768px){
    
   }
@@ -225,3 +230,5 @@ ul li {
         padding: 0;
     }
   }
+
+   /*Vender ya tiene responsive check*/
