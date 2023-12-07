@@ -204,12 +204,12 @@ ul li {
   
       #Homepage h1 {
           margin: 0 25px;
-          font-size: 20px;
+          font-size: 15px;
       }
   
       #Homepage ul {
           width: 50%;
-          font-size: 10px;
+          font-size: 5px;
       }
 
     .productText h1 img {
@@ -229,6 +229,7 @@ ul li {
     #formProduct {
         padding: 0;
     }
+  }
   }
 
    /*Vender ya tiene responsive check*/
