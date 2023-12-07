@@ -4,17 +4,17 @@ function addToCart(button) {
     const selectedProduct = button.parentElement;
     const name = selectedProduct.dataset.name;
     const price = parseFloat(selectedProduct.dataset.price);
-    let existence = parseInt(selectedProduct.dataset.existence);  // Corregir aquí
+    let existence = parseInt(selectedProduct.dataset.existence);
 
     if (existence > 0) {
-        // Agregar al carrito
+        // Add to the cart
         cart.push({ name, price });
-    
-        // Disminuir la existencia y actualizar en la lista de productos
-        existence--;  // Corregir aquí
-        selectedProduct.dataset.existence = existence; 
+
+        // Decrease existence and update in the product list
+        existence--;
+        selectedProduct.dataset.existence = existence;
         alert(`Se agregó ${name} al carrito. Existencia actual: ${existence}`);
-    
+
         showCart();
     } else {
         alert("Producto agotado");
@@ -34,7 +34,7 @@ function showCart() {
         const img = document.createElement("img");
         img.src = `./assets/images/${product.name.replace(/\s+/g, '')}.jpg`;
         img.alt = product.name;
-        img.style.maxWidth = '50vh';  // You can adjust the image size according to your preferences
+        img.style.maxWidth = '50vh';
         img.style.maxHeight = '50vh';
         li.appendChild(img);
 
@@ -42,7 +42,7 @@ function showCart() {
         namePrice.innerHTML = `<b>${product.name}</b> - $${product.price.toFixed(2)}`;
 
         const deleteButton = document.createElement("button");
-        deleteButton.textContent = "Delete Product";
+        deleteButton.textContent = "Borrar producto";
         deleteButton.onclick = function () {
             removeFromCart(index);
         };
@@ -55,6 +55,9 @@ function showCart() {
     });
 
     totalCart.textContent = total.toFixed(2);
+
+    // Save cart to localStorage
+    saveCart();
 }
 
 function removeFromCart(index) {
@@ -84,11 +87,11 @@ function emptyCart() {
 
 function buyProducts() {
     if (cart.length > 0) {
-        alert("Thank you for your purchase! Purchased products:\n" + getPurchasedProducts());
+        alert("Gracias por su compra! Productos comprados:\n" + getPurchasedProducts());
         // You can perform additional actions related to the purchase here
         emptyCart();
     } else {
-        alert("The cart is empty. Add products before buying.");
+        alert("El carrito está vacío. Añade productos antes de comprar.");
     }
 }
 
@@ -96,3 +99,17 @@ function getPurchasedProducts() {
     return cart.map(product => `${product.name} - $${product.price.toFixed(2)}`).join('\n');
 }
 
+function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function retrieveCart() {
+    const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.length = 0;
+    cart.push(...savedCart);
+}
+
+// Retrieve the cart on page load
+retrieveCart();
+// Show the initial cart state
+showCart();

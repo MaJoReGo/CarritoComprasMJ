@@ -157,3 +157,99 @@ body {
     max-width: 50vh; 
     margin: 10px;
 }
+
+@media(max-width:1279px){
+
+}
+  
+  @media(max-width:768px){
+    .ContainerImages img {
+        max-width: 50vh;
+        margin: 95px 0;
+    }
+    .SecondContainerImage img {
+        width: 50vh;
+        margin: 165px 10px;
+    }
+    .ThirdContainerImage img{
+        max-width: 40vh; 
+    }
+    .FourthContainerImage img{
+        max-width: 40vh; 
+    }
+    .FifthContainerImage img{
+        max-width: 40vh; 
+    }
+  }
+  
+  @media(max-width:480px){
+    #Homepage{
+        width: 100%;
+      }
+  
+      #Homepage h1 {
+          margin: 0 25px;
+          font-size: 20px;
+      }
+  
+      #Homepage ul {
+          width: 50%;
+          font-size: 10px;
+      }
+      
+      .MainText h1 {
+        font-size: 20px;
+      }
+
+      .MainText p {
+        font-size: 10px;
+      }
+
+      .MainText b {
+        font-size: 10px;
+      }
+
+      .ContainerImages img {
+        max-width: 35vh;
+        margin: 75px 0;
+    }
+
+    .SecondText h1{
+        font-size: 20px;
+    }
+
+    .SecondText p {
+        font-size: 10px;
+    }
+
+    .SecondText b {
+        font-size: 10px;
+    }
+
+    .SecondContainerImage img {
+        width: 35vh;
+        margin: 144px 10px;
+    }
+
+    .TextContainer h1{
+        font-size: 20px;
+    }
+
+    .TextContainer p {
+        font-size: 10px;
+    }
+
+    .TextContainer b {
+        font-size: 10px;
+    }
+
+    .ThirdContainerImage img{
+        max-width: 25vh; 
+    }
+    .FourthContainerImage img{
+        max-width: 25vh; 
+    }
+    .FifthContainerImage img{
+        max-width: 25vh; 
+    }
+  }

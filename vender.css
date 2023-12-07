@@ -1,39 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    width: 100%;
+    background-color: #d9d3d1;
+    color: #242321;
+    margin: auto;
+  }
+
+#Homepage{
+    display: flex;
+    width: 100%;
+    background-color: #c3bdb9;
+}
+#Homepage h1 {
+    margin: 0 20px;
+}
+
+#Homepage ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+#Homepage ul li {
+    margin-right: 20px;
+}
+
+#Homepage a {
+    text-decoration: none;
+    color: #242321;
+}
+
+#Homepage a:hover {
+    color: #46433e;
+}
+
+#Homepage .icon img {
+    width: 20px;
+}
+
+.productText h1{
+    color: rgba(52, 43, 26, 0.605);
+}
+.productText h1 img{
+    width: 20px;
+    margin: 10px;
+}
+
+#productForm{
+    background-color: #c3bdb907;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+#productForm h1{
+    color: rgba(144, 75, 25, 0.359);
+    padding: 10px 0;
+}
+
+#formProduct {
+    background-color: #c3bdb907;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+#formProduct label input {
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgba(175, 102, 102, 0.234);
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+}
+
+
+#formProduct button {
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 10px 0;
+}
+
+#formProduct button:hover {
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+h2 {
+    color: rgba(164, 18, 18, 0.525);
+    width: 100%;
+}
+
+h2 img {
+    width: 20px;
+    margin: 10px;
+}
+
+#listProducts {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    width: 100%;
+    background-color: #d9d3d1;
+    color: #242321;
+    margin: auto;
+}
+
+#listProducts img {
+    width: 50vh;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+ul li {
+    list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+#cart {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #e3e3e3;
+    width: 100%;
+    margin: 10px 0;
 }
 
-input, button {
-    margin-top: 10px;
+#cartList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
 }
 
-#listaProductos img {
-    max-width: 100%;
-    border-radius: 4px;
+#cartList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(167, 153, 142, 0.241);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
     margin-bottom: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
 }
+
+#cartList li:hover {
+    transform: scale(1.02);
+}
+
+#cartList img {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+#totalCart {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#cart button {
+    border-radius: 10px;
+    background-color: rgba(175, 102, 102, 0.234);
+    padding: 10px;
+    border: rgba(175, 102, 102, 0.234);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 10px 0;
+}
+
+#cart button:hover {
+    background-color: rgba(89, 24, 24, 0.234);
+}
+
+
+@media(max-width:1279px){
+
+}
+  
+  @media(max-width:768px){
+   
+  }
+  
+  @media(max-width:480px){
+    #Homepage{
+        width: 100%;
+      }
+  
+      #Homepage h1 {
+          margin: 0 25px;
+          font-size: 20px;
+      }
+  
+      #Homepage ul {
+          width: 50%;
+          font-size: 10px;
+      }
+
+    .productText h1 img {
+        width: 15px;
+        margin: 0 10px;
+    }
+    #productForm {
+        padding: 0;
+    }
+
+    #productForm h1 {
+        padding: 0;
+    }
+    #productForm p {
+        padding: 0 10px;
+    }
+    #formProduct {
+        padding: 0;
+    }
+  }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Harmony</title>
-    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="vender.css">
 </head>
 <body>
 <header>
@@ -18,31 +18,44 @@
             <li class="icon"><b><a href="carrito.html" target="_blank"><img src="./icons/cart-outline.svg" alt="Carrito"></a></b></li>
         </ul>
     </div>
-</header>
-<section id="administrador">
-    <h1>¿Quieres agregar nuevos productos?</h1>
-    <form id="formularioProducto">
-        <label for="nombre">Nombre del Producto:</label>
-        <input type="text" id="nombre" required>
+    <div class="productText">
+        <h1><img src="./icons/snow-outline.svg"><img src="./icons/snow-outline.svg"><img src="./icons/snow-outline.svg"><img src="./icons/snow-outline.svg">Simple Store<img src="./icons/snow-outline.svg"><img src="./icons/snow-outline.svg"><img src="./icons/snow-outline.svg"><img src="./icons/snow-outline.svg"></h1>
+    </div>
+    
+    <section id="productForm">
+        <h1>Agrega tus productos a Simple Harmony</h1>
+        <p>La diversidad de productos cobra vida en su vibrante entorno digital. Aquí, la magia de la creatividad se despliega en cada rincón, ofreciendo una experiencia única llena de opciones que reflejan la innovación y la variedad. Explora nuestro catálogo digital, donde cada producto es una expresión única de creatividad y calidad. </p>
+        <form id="formProduct">
+            <label for="image">Agrega la URL de la imagen:</label>
+            <input type="url" id="image" required>
 
-        <label for="precio">Precio:</label>
-        <input type="number" id="precio" step="0.01" required>
+            <label for="name">Dale al producto un nombre:</label>
+            <input type="text" id="name" required>
 
-        <label for="existencia">Existencia:</label>
-        <input type="number" id="existencia" required>
+            <label for="price">Asigna un precio:</label>
+            <input type="number" id="price" step="0.01" required>
 
-        <label for="descripcion">Descripcion del Producto:</label>
-        <input type="text" id="descripcion" required>
+            <label for="existence">Genera una existencia:</label>
+            <input type="number" id="existence" required>
 
-        <label for="imagen">URL de la Imagen:</label>
-        <input type="url" id="imagen" required>
+            <label for="description">Describe el producto:</label>
+            <input type="text" id="description" required>
 
-        <button type="button" onclick="agregarProducto()">Agregar Producto</button>
-    </form>
+            <button type="button" onclick="addProduct()">Agregar producto</button>
+        </form>
+    </section>
 
-    <h2>Lista de Productos</h2>
-    <ul id="listaProductos"></ul>
-</section>
+    <section id="productList">
+        <h2>Lista de productos nuevos</h2>
+        <ul id="listProducts"></ul>
+    </section>
+
+    <section id="cart">
+        <h2>Carrito de compras</h2>
+        <ul id="cartList"></ul>
+        <p>Total: $<span id="totalCart">0.0</span></p>
+        <button onclick="buyProducts()">Finalizar compra</button>
+    </section>
 <script src="vender.js"></script>
 </body>
 </html>
