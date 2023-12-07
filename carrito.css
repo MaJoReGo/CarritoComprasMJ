@@ -1189,7 +1189,7 @@ ul li{
    
   }
   
-  @media(max-width:480px) {
+@media(max-width:480px) {
     #Homepage{
         width: 100%;
       }
@@ -1254,13 +1254,13 @@ ul li{
         padding: 9px 0;
     }
 
-    .FirstProductBoy,
-    .SecondProductBoy,
-    .ThirdProductBoy,
-    .FourthProductBoy,
+    .FirstProductBoy, 
+    .SecondProductBoy, 
+    .ThirdProductBoy, 
+    .FourthProductBoy, 
     .FiftyProductBoy {
         margin-right: 5px;
-        width: 13vh;
+        width: 9vh;
     }
 
     .FirstProductBoy img,
@@ -1309,7 +1309,7 @@ ul li{
     .ThirdProductFemenine,
     .FourthProductFemenine,
     .FiftyProductFemenine {
-        width: 15vh;
+        width: 9vh;
     }
 
     .FirstProductFemenine img,
@@ -1350,7 +1350,7 @@ ul li{
         margin: 5px 0px;
     }
 
-    .ContainerImagesMasculineg img {
+    .ContainerImagesMasculine img {
         width: 20vh;
         margin: 10px 0;
     }
@@ -1360,7 +1360,7 @@ ul li{
     .ThirdProductMasculine,
     .FourthProductMasculine,
     .FiftyProductMasculine {
-        width: 15vh;
+        width: 9vh;
     }
 
     .FirstProductMasculine img,
